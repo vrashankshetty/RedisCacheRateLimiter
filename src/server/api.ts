@@ -1,7 +1,7 @@
 import axios, { type AxiosError } from "axios";
 
 
-const backendUrl = 'http://localhost:3000/api';
+const backendUrl = 'https://redis-cache-rate-limiter-4n3c.vercel.app/api';
 
 
 export const getCache = async () => {
