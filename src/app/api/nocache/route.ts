@@ -1,6 +1,7 @@
 import axios from 'axios';
 
 
+export const dynamic = "force-dynamic"
 export const GET=async()=>{
     const startTime = new Date().getTime();
     try{
