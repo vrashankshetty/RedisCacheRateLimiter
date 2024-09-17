@@ -3,7 +3,7 @@ import axios from 'axios';
 
 
 
-
+export const dynamic = "force-dynamic"
 export const GET=async()=>{
     const startTime = new Date().getTime();
     
@@ -36,9 +36,6 @@ export const GET=async()=>{
         ),{
             status:200,
             statusText:'Success',
-            headers:{
-                'Cache-Control':'no-store'
-            }
         })
     }
     catch(e){

@@ -3,8 +3,8 @@ import { Ratelimit } from "@upstash/ratelimit";
 import '../../envConfig'
 
 export const redis = new Redis({
-  url: process.env.UPTASH_URL,
-  token: process.env.UPTASH_TOKEN,
+  url: process.env.UPTASH_URL??'',
+  token: process.env.UPTASH_TOKEN??'',
 })
 
 

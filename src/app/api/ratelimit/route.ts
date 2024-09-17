@@ -1,6 +1,7 @@
 import { rateLimit } from '@/lib/redis';
 import axios from 'axios';
 
+export const dynamic = "force-dynamic"
 
 export const GET=async(req:Request)=>{
     const startTime = new Date().getTime();
